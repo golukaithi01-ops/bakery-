@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sweet Bakery Shop, Takiya Bazaar, Sasaram, Bihar. Explore cakes and ask about our one-pound cake offer.">
+  <title>Sweet Bakery Shop | Sasaram, Bihar</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="top-bar">
+    🎂 Sweet moments, freshly celebrated! &nbsp; | &nbsp;
+    <a href="#offer">Discover our special offer</a>
+  </div>
+
+  <header class="header">
+    <a href="#home" class="logo">
+      <span class="logo-icon">🧁</span>
+      <span>Sweet <em>Bakery Shop</em></span>
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle"
+      aria-label="Open navigation menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#cakes">Our Cakes</a>
+      <a href="#offer">Special Offer</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#" class="nav-order js-whatsapp"
+        data-message="Hello Sweet Bakery Shop! Please share your available cakes and prices.">
+        Order Now ↗
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">BAKED FOR YOUR HAPPIEST MOMENTS</span>
+        <h1>A Little Sweetness,<br>A Lot of <span>Happiness.</span></h1>
+        <p>
+          Make every birthday, celebration and special moment sweeter
+          with cakes from Sweet Bakery Shop in Sasaram, Bihar.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#cakes" class="btn btn-primary">Explore Our Cakes →</a>
+          <a href="#" class="btn btn-outline js-whatsapp"
+            data-message="Hello Sweet Bakery Shop! I would like to enquire about your cakes.">
+            💬 Order on WhatsApp
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span>♡</span> Cakes for birthdays, celebrations and more
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-circle"></div>
+        <img
+          src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85"
+          alt="Beautiful decorated celebration cake"
+          class="hero-image">
+        <div class="floating-card">
+          <span class="floating-icon">🎂</span>
+          <div>
+            <strong>Make It Special</strong>
+            <small>Celebrate with cake!</small>
+          </div>
+        </div>
+        <span class="decor decor-one">✦</span>
+        <span class="decor decor-two">♡</span>
+      </div>
+    </section>
+
+    <section class="offer-section" id="offer">
+      <div class="offer-decoration">✦</div>
+      <div class="offer-content">
+        <span class="offer-label">A SWEET SURPRISE FOR YOU</span>
+        <h2>BUY 1 <span>GET 1 FREE!</span></h2>
+        <p>Special offer on eligible one-pound cakes only.</p>
+        <small>Please contact us to confirm availability and offer details.</small>
+        <a href="#" class="btn btn-light js-whatsapp"
+          data-message="Hello Sweet Bakery Shop! I want to know more about your Buy 1 Get 1 Free offer on one-pound cakes.">
+          Ask About This Offer →
+        </a>
+      </div>
+      <div class="offer-art" aria-hidden="true">🎂</div>
+    </section>
+
+    <section class="cakes-section section" id="cakes">
+      <div class="section-heading">
+        <span class="eyebrow">MADE FOR SWEET MOMENTS</span>
+        <h2>Our Delicious <span>Selection</span></h2>
+        <p>Find something special for your next celebration.</p>
+      </div>
+
+      <div class="cake-grid">
+        <article class="cake-card">
+          <div class="cake-image">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=650&q=80"
+              alt="Chocolate celebration cake" loading="lazy">
+            <span class="cake-badge">Chocolate Lover</span>
+          </div>
+          <div class="cake-info">
+            <h3>Chocolate Cake</h3>
+            <p>Chocolatey goodness for your special moments.</p>
+            <div class="cake-bottom">
+              <span class="price">Price on request</span>
+              <button class="order-btn" data-product="Chocolate Cake"
+                type="button">Order ↗</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="cake-card">
+          <div class="cake-image">
+            <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?auto=format&fit=crop&w=650&q=80"
+              alt="Black Forest style cake" loading="lazy">
+          </div>
+          <div class="cake-info">
+            <h3>Black Forest Cake</h3>
+            <p>A classic choice for memorable celebrations.</p>
+            <div class="cake-bottom">
+              <span class="price">Price on request</span>
+              <button class="order-btn" data-product="Black Forest Cake"
+                type="button">Order ↗</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="cake-card">
+          <div class="cake-image">
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=650&q=80"
+              alt="Vanilla cream cake" loading="lazy">
+          </div>
+          <div class="cake-info">
+            <h3>Vanilla Cake</h3>
+            <p>A delightful classic for every occasion.</p>
+            <div class="cake-bottom">
+              <span class="price">Price on request</span>
+              <button class="order-btn" data-product="Vanilla Cake"
+                type="button">Order ↗</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="cake-card">
+          <div class="cake-image">
+            <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=650&q=80"
+              alt="Strawberry celebration cake" loading="lazy">
+          </div>
+          <div class="cake-info">
+            <h3>Strawberry Cake</h3>
+            <p>A fruity-looking treat for sweet celebrations.</p>
+            <div class="cake-bottom">
+              <span class="price">Price on request</span>
+              <button class="order-btn" data-product="Strawberry Cake"
+                type="button">Order ↗</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="cake-card">
+          <div class="cake-image">
+            <img src="https://images.unsplash.com/photo-1558636508-e0db3814bd1d?auto=format&fit=crop&w=650&q=80"
+              alt="Birthday celebration cake" loading="lazy">
+          </div>
+          <div class="cake-info">
+            <h3>Birthday Cake</h3>
+            <p>Add a sweet touch to someone's special day.</p>
+            <div class="cake-bottom">
+              <span class="price">Price on request</span>
+              <button class="order-btn" data-product="Birthday Cake"
+                type="button">Order ↗</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="cake-card">
+          <div class="cake-image">
+            <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=650&q=80"
+              alt="Celebration cake" loading="lazy">
+          </div>
+          <div class="cake-info">
+            <h3>Celebration Cake</h3>
+            <p>Something sweet for life's little milestones.</p>
+            <div class="cake-bottom">
+              <span class="price">Price on request</span>
+              <button class="order-btn" data-product="Celebration Cake"
+                type="button">Order ↗</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="cake-card">
+          <div class="cake-image">
+            <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=650&q=80"
+              alt="Assorted bakery pastries" loading="lazy">
+          </div>
+          <div class="cake-info">
+            <h3>Pastries</h3>
+            <p>Little treats for your everyday sweet cravings.</p>
+            <div class="cake-bottom">
+              <span class="price">Price on request</span>
+              <button class="order-btn" data-product="Pastries"
+                type="button">Order ↗</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="why-section section">
+      <div class="section-heading">
+        <span class="eyebrow">A SWEETER WAY TO CELEBRATE</span>
+        <h2>Why Visit <span>Sweet Bakery Shop?</span></h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature">
+          <span>🎂</span>
+          <h3>Celebration Cakes</h3>
+          <p>Cake options for birthdays and special occasions.</p>
+        </div>
+        <div class="feature">
+          <span>💬</span>
+          <h3>Easy Ordering</h3>
+          <p>Ask about cakes and availability through WhatsApp.</p>
+        </div>
+        <div class="feature">
+          <span>📍</span>
+          <h3>Local to Sasaram</h3>
+          <p>Find us at Takiya Bazaar, Sasaram, Bihar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section section" id="gallery">
+      <div class="section-heading">
+        <span class="eyebrow">A FEAST FOR THE EYES</span>
+        <h2>Sweet <span>Inspiration</span></h2>
+        <p>Explore our cake gallery. Photos are illustrative and may not show actual shop inventory.</p>
+      </div>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+          alt="Decorated cake" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?auto=format&fit=crop&w=700&q=80"
+          alt="Chocolate cake inspiration" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=700&q=80"
+          alt="Cream cake inspiration" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=700&q=80"
+          alt="Pastries inspiration" loading="lazy">
+      </div>
+    </section>
+
+    <section class="about-section section" id="about">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85"
+          alt="Bakery treats" loading="lazy">
+      </div>
+      <div class="about-content">
+        <span class="eyebrow">A LITTLE ABOUT US</span>
+        <h2>Every Celebration Deserves Something <span>Sweet.</span></h2>
+        <p>
+          Welcome to Sweet Bakery Shop in Sasaram, Bihar. Whether you are
+          celebrating a birthday, planning a gathering or simply looking
+          for a sweet treat, explore our cake selection and contact us
+          to ask about available options.
+        </p>
+        <a href="#contact" class="btn btn-primary">Find Our Shop →</a>
+      </div>
+    </section>
+
+    <section class="contact-section section" id="contact">
+      <div class="section-heading">
+        <span class="eyebrow">WE'D LOVE TO HEAR FROM YOU</span>
+        <h2>Let's Make It <span>Sweet!</span></h2>
+        <p>Contact us for cake options, prices and orders.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="contact-icon">📍</span>
+          <h3>Visit Our Shop</h3>
+          <p>Takiya Bazaar, under the overbridge,<br>
+            opposite Jyoti Beauty Parlour,<br>Sasaram, Bihar, India.</p>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-icon">📱</span>
+          <h3>Call or WhatsApp</h3>
+          <p><a href="tel:+919334762559">+91 9334762559</a></p>
+          <a class="text-link js-whatsapp" href="#"
+            data-message="Hello Sweet Bakery Shop! I would like to enquire about your cakes.">
+            Send a WhatsApp message →
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <h3>Email Us</h3>
+          <p><a href="mailto:patelgolu1234@gmail.com">patelgolu1234@gmail.com</a></p>
+          <small>For enquiries and cake orders</small>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-icon">🕒</span>
+          <h3>Opening Hours</h3>
+          <p>Every day</p>
+          <strong>8:00 AM – 10:00 PM</strong>
+          <small>Please confirm availability before ordering.</small>
+        </div>
+      </div>
+
+      <div class="contact-cta">
+        <div>
+          <h3>Craving Something Sweet?</h3>
+          <p>Message us to ask about cakes, prices and availability.</p>
+        </div>
+        <a class="btn btn-light js-whatsapp" href="#"
+          data-message="Hello Sweet Bakery Shop! Please share your available cakes, prices and ordering details.">
+          💬 Chat on WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="footer-logo">🧁 Sweet Bakery Shop</a>
+    <p>Making your special moments a little sweeter.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#cakes">Our Cakes</a>
+      <a href="#offer">Special Offer</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="copyright">
+      © <span id="year"></span> Sweet Bakery Shop. All rights reserved.
+    </p>
+  </footer>
+
+  <a href="#" class="floating-whatsapp js-whatsapp"
+    aria-label="Contact Sweet Bakery Shop on WhatsApp"
+    data-message="Hello Sweet Bakery Shop! I would like to enquire about your cakes.">
+    ☎
+  </a>
+
+</body>
+</html>
